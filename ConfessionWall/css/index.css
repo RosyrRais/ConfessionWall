@@ -1,6 +1,9 @@
 body{
 	padding: 0;
 	margin: 0;
+	color: #714500;
+	
+	background-image: url("../photo/backgrond.png");
 }
 a{
 	color: black;
@@ -8,8 +11,10 @@ a{
 }
 
 #top{
-	border-bottom: solid #bcbcbc 0.3125rem;
+	border-bottom: solid #ff6600 0.3125rem;
 	padding: 0.625rem;
+	
+	background-color: #e5a65e;
 }
 h1{
 	display: inline-block;
@@ -20,6 +25,6 @@ h1{
 	margin: 0rem 0.25rem;
 	padding: 0rem 0.3rem;
 	
-	border: solid #bcbcbc 0.2rem;
+	border: solid #c14000 0.2rem;
 	border-radius: 0.2rem;
 }
