@@ -1,0 +1,25 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+
+#top{
+	border-bottom: solid #bcbcbc 0.3125rem;
+	padding: 0.625rem;
+}
+h1{
+	display: inline-block;
+	margin: 0rem 1rem;
+}
+#top a{
+	display: inline-block;
+	margin: 0rem 0.25rem;
+	padding: 0rem 0.3rem;
+	
+	border: solid #bcbcbc 0.2rem;
+	border-radius: 0.2rem;
+}
