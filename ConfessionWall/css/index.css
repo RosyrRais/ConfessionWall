@@ -11,9 +11,13 @@ a{
 }
 #top{
 	/* border-bottom: solid #ff6600 0.3125rem; */
+	position: fixed;
 	padding: 0.625rem;
+	width: 100%;
 	
 	background-color: #e5a65e;
+	
+	z-index: 0;
 }
 h1{
 	display: inline-block;
@@ -33,11 +37,13 @@ h1{
 	padding: 0 15%;
 }
 .content{
+	position: relative;
 	float: left;
+	z-index: -1;
 	
 	width: 100%;
-	margin-top: 3rem;
-	margin-bottom: -2.5rem;
+	margin-top: 6rem;
+	margin-bottom: -5rem;
 	padding: 0.3rem;
 	
 	border: solid #f1f1f1 0.25rem;
