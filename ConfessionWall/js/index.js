@@ -13,4 +13,14 @@ $(function(){
 			"color":"#000"
 			}, 200);
 	})
+	$(".content").mouseover(function(){
+		$(this).stop(true, false).animate({
+			"opacity":"0.8"
+			}, 100);
+	})
+	$(".content").mouseout(function(){
+		$(this).stop(true, false).animate({
+			"opacity":"0.6"
+			}, 100);
+	})
 })
