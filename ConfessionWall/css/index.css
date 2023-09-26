@@ -11,7 +11,7 @@ a{
 }
 
 #top{
-	border-bottom: solid #ff6600 0.3125rem;
+	/* border-bottom: solid #ff6600 0.3125rem; */
 	padding: 0.625rem;
 	
 	background-color: #e5a65e;
