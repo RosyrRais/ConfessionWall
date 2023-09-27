@@ -28,7 +28,7 @@ h1{
 	margin: 0rem 0.25rem;
 	padding: 0rem 0.3rem;
 	
-	border: solid #c14000 0.2rem;
+	border-bottom: solid #c14000 0.2rem;
 	border-radius: 0.2rem;
 	background-color: #e5a65e;
 }

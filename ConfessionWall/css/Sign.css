@@ -12,8 +12,9 @@ form{
 	text-align: center;
 	
 	padding: 1rem;
-	border: solid #c14000 0.4rem;
-	border-radius: 0.4rem;
+	border-bottom: solid #c14000 0.3rem;
+	border-top: solid #c14000 0.2rem;
+	border-radius: 0.3rem;
 	
 	color: #714500;
 	background-color: #e5a65e;
