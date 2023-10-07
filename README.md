@@ -1,2 +1,2 @@
 # ConfessionWall
-To show our public display of affection。
+To show our public display of affection.
