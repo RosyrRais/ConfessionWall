@@ -18,5 +18,6 @@ func Init(r *gin.Engine) {
 		wall.POST("/post", confessioncontroller.PostConfession)
 		wall.POST("/delete", confessioncontroller.DeleteConfession)
 		wall.POST("/update", confessioncontroller.UpdateConfession)
+		wall.POST("/space", indexcontroller.Space)
 	}
 }
