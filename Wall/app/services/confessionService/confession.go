@@ -29,13 +29,13 @@ func DeleteConfessionById(id int) error {
 	return res.Error
 }
 
-func UpdateConfessionById(id int, title string, text string, hidename int, open int) error {
-	res := database.DB.Save(&models.Confession{Id: uint(id), Title: title, Text: text, Hidename: uint(hidename), Open: uint(open)})
+func UpdateConfessionById(id int, title string, text string, hidename int, open int, poster string) error {
+	res := database.DB.Save(&models.Confession{Id: uint(id), Title: title, Text: text, Hidename: uint(hidename), Open: uint(open), Poster: poster})
 	return res.Error
 }
 
-func FindAll() (*models.Confession, error) {
-	var confessions models.Confession
+func FindAll() (*[]models.Confession, error) {
+	var confessions []models.Confession
 	res := database.DB.Find(&confessions)
 	if res.Error != nil {
 		return nil, res.Error
@@ -43,9 +43,9 @@ func FindAll() (*models.Confession, error) {
 	return &confessions, nil
 }
 
-func FindConfessionsByName(name string) (*models.Confession, error) {
-	var confessions models.Confession
-	res := database.DB.Where("name = ?", name).Find(&confessions)
+func FindConfessionsByName(name string) (*[]models.Confession, error) {
+	var confessions []models.Confession
+	res := database.DB.Where("poster = ?", name).Find(&confessions)
 	if res.Error != nil {
 		return nil, res.Error
 	}

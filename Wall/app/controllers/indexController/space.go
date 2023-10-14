@@ -33,7 +33,7 @@ func Space(c *gin.Context) {
 		return
 	}
 
-	var confessions *models.Confession
+	var confessions *[]models.Confession
 	confessions, err = confessionservice.FindConfessionsByName(data.Name)
 	if err != nil {
 		if err == gorm.ErrRecordNotFound {

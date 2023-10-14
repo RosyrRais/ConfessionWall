@@ -9,7 +9,7 @@ import (
 )
 
 func Index(c *gin.Context) {
-	var confessions *models.Confession
+	var confessions *[]models.Confession
 	//	var err gin.Error
 	confessions, err := confessionservice.FindAll()
 	if err != nil {

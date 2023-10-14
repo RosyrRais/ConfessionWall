@@ -14,7 +14,7 @@ type UpdateData struct {
 	Text     string `json:"text" binding:"required"`
 	Hidename int    `json:"hidename" binding:"required"`
 	Open     int    `json:"open" binding:"required"`
-	//	Poster    string `json:"poster" binding:"required"`
+	Poster   string `json:"poster" binding:"required"`
 }
 
 func UpdateConfession(c *gin.Context) {
@@ -41,9 +41,9 @@ func UpdateConfession(c *gin.Context) {
 
 	//修改成功
 
-	err = confessionservice.UpdateConfessionById(data.Id, data.Title, data.Text, data.Hidename, data.Open)
+	err = confessionservice.UpdateConfessionById(data.Id, data.Title, data.Text, data.Hidename, data.Open, data.Poster)
 	if err != nil {
-		utils.JsonResponseError(c, 102, "删除时错误，请重试")
+		utils.JsonResponseError(c, 102, "修改时错误，请重试")
 		return
 	}
 
