@@ -1,0 +1,18 @@
+#wrap{
+	padding: 0 15%;
+}
+#centerNav{
+	position: relative;
+	top: 6rem;
+	padding: 0.8rem;
+	
+	border: solid #f1f1f1 0.25rem;
+	border-radius: 0.25rem;
+	background-color: #f1f1f1;
+	opacity: 0.8;
+	
+	line-height: 1.8rem;
+}
+#centerNav h3{
+	margin: 0 0 1rem 0;
+}
