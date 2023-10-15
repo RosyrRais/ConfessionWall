@@ -1,0 +1,28 @@
+#sighBox{
+	height: 30rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form{
+	position: relative;
+	height: 8rem;
+	width: 16rem;
+	
+	text-align: center;
+	
+	padding: 1rem;
+	border-bottom: solid #c14000 0.3rem;
+	border-top: solid #c14000 0.2rem;
+	border-radius: 0.3rem;
+	
+	color: #714500;
+	background-color: #e5a65e;
+}
+#back{
+	position: absolute;
+	left: 1.25rem;
+	bottom: 0.625rem;
+	
+	font-size: 0.8em;
+}
